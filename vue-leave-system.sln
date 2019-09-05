@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.779
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "vue-leave-system", "vue-leave-system\vue-leave-system.njsproj", "{DBAC244D-F212-40F5-B109-A0F18B39DE90}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DBAC244D-F212-40F5-B109-A0F18B39DE90}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DBAC244D-F212-40F5-B109-A0F18B39DE90}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DBAC244D-F212-40F5-B109-A0F18B39DE90}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DBAC244D-F212-40F5-B109-A0F18B39DE90}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8766B738-95AC-46A9-B02F-725A4D2094FB}
+	EndGlobalSection
+EndGlobal
