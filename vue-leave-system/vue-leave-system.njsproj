@@ -36,6 +36,21 @@
     <Content Include="src\components\Home.vue" />
     <Content Include="package.json" />
     <Content Include="README.md" />
+    <Content Include="src\components\leave-apply-component.vue">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\components\leave-aprv-component.vue">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\components\leave-history-component.vue">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\components\my-leave-history-component.vue">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\components\organization-structure-component.vue">
+      <SubType>Code</SubType>
+    </Content>
     <Content Include="src\components\profile-component.vue">
       <SubType>Code</SubType>
     </Content>
@@ -50,6 +65,9 @@
   <ItemGroup>
     <Compile Include="babel.config.js" />
     <Compile Include="src\main.js" />
+    <Compile Include="src\router.js">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <!-- Do not delete the following Import Project.  While this appears to do nothing it is a marker for setting TypeScript properties before our import that depends on them. -->
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="False" />
