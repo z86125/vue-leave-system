@@ -1,7 +1,8 @@
-<template>
-    <div class="home" style="border:3px #FF0000 solid;">
-        <h1>{{ msg }}</h1>
-        <p>Welcome to your new single-page application, built with <a href="https://vuejs.org" target="_blank">Vue.js</a>.</p>
+﻿<template>
+    <div class="home">
+        <div class="h-align">
+            <span>嗨 <a href="https://vuejs.org" target="_blank">Vue.js</a>，這是首頁 !</span>
+        </div>
     </div>
 </template>
 
@@ -16,4 +17,5 @@
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+    
 </style>
