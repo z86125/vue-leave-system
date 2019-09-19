@@ -1,18 +1,18 @@
 ﻿<template>
     <div id="app">
         <div>
-            <b-navbar toggleable="lg" type="dark" variant="primary">
-                <b-navbar-brand><router-link to="/home"><span style="color: white">請假系統</span></router-link></b-navbar-brand>
+            <b-navbar toggleable="lg" type="dark" variant="primary" class="app-navbar-text">
+                <b-navbar-brand v-on:click="NavbarClick"><router-link to="/home"><span>請假系統</span></router-link></b-navbar-brand>
 
                 <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
                 <b-collapse id="nav-collapse" is-nav>
                     <b-navbar-nav>
-                        <b-nav-item><router-link to="/profile"><span style="color: white">我的基本資料</span></router-link></b-nav-item>
-                        <b-nav-item><router-link to="/myLeaveHistory"><span style="color: white">我的請假紀錄</span></router-link></b-nav-item>
-                        <b-nav-item><router-link to="/leaveApply"><span style="color: white">請假申請</span></router-link></b-nav-item>
-                        <b-nav-item><router-link to="/leaveAprv"><span style="color: white">請假待覆核</span></router-link></b-nav-item>
-                        <b-nav-item><router-link to="/leaveHistory"><span style="color: white">請假紀錄</span></router-link></b-nav-item>
-                        <b-nav-item><router-link to="/orgStruct"><span style="color: white">組織架構圖</span></router-link></b-nav-item>
+                        <b-nav-item v-on:click="NavbarClick"><router-link to="/profile"><span>我的基本資料</span></router-link></b-nav-item>
+                        <b-nav-item v-on:click="NavbarClick"><router-link to="/myLeaveHistory"><span>我的請假紀錄</span></router-link></b-nav-item>
+                        <b-nav-item v-on:click="NavbarClick"><router-link to="/leaveApply"><span>請假申請</span></router-link></b-nav-item>
+                        <b-nav-item v-on:click="NavbarClick"><router-link to="/leaveAprv"><span>請假待覆核</span></router-link></b-nav-item>
+                        <b-nav-item v-on:click="NavbarClick"><router-link to="/leaveHistory"><span>請假紀錄</span></router-link></b-nav-item>
+                        <b-nav-item v-on:click="NavbarClick"><router-link to="/orgStruct"><span>組織架構圖</span></router-link></b-nav-item>
                     </b-navbar-nav>
                 </b-collapse>
             </b-navbar>
@@ -32,6 +32,20 @@
 
     export default {
         name: 'app',
+        data: function () {
+            return {
+                lastEvent: null
+            }
+        },
+        methods: {
+            NavbarClick: function (event) {
+                if (this.lastEvent) {
+                    this.lastEvent.classList.remove('app-navbar-click');
+                }
+                event.target.classList.add('app-navbar-click');
+                this.lastEvent = event.target;
+            }
+        },
         components: {
             home,
             profile,
@@ -45,8 +59,20 @@
 </script>
 
 <style>
-    .navbar-text {
+    .app-navbar-text span {
         color: white;
+        font-family: Microsoft JhengHei;
+    }
+    .app-table {
+        background-color: #FFFFFF;
+    }
+        .app-table > thead > tr {
+            background-color: #5C5C5C;
+            color: #FFFFFF;
+        }
+    .app-navbar-click {
+        font-size: large;
+        font-weight: bold;
     }
     .v-align {
         display: flex;
@@ -55,4 +81,15 @@
     .h-align {
         text-align: center;
     }
+    /*進場動畫 name=fade*/
+    .fade-enter-active,
+    .fade-leave-active {
+        transition: opacity .8s;
+    }
+
+    .fade-enter,
+    .fade-leave-to {
+        opacity: 0;
+    }
+
 </style>
