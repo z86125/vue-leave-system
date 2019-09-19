@@ -1,4 +1,5 @@
-﻿import Vue from 'vue';
+﻿// 路由定義頁
+import Vue from 'vue';
 import VueRouter from 'vue-router'
 // router-component
 import home           from './components/Home.vue';

@@ -1,7 +1,11 @@
 ﻿<template>
     <div class="profile">
+        <!-- transition為vue來處理轉場動畫的tag -->
         <transition name="fade">
             <div v-show="show">
+                <!-- b-container為bootstrap-vue的tag
+                     為加強版的bootstrap grid，用來達到RWD的效果
+                -->
                 <b-container style="padding-top: 30px;">
                     <b-row>
                         <b-col cols="2"></b-col>

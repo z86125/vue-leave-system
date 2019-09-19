@@ -65,6 +65,7 @@
 </template>
 
 <script>
+    //使用第三方組件vue-datepicker
     import myDatepicker from 'vue-datepicker/vue-datepicker-es6.vue';
 
     export default {
@@ -74,6 +75,7 @@
         data: function () {
             return {
                 show: false,
+                // date-picker參數
                 startTime: {
                     time: ''
                 },
@@ -97,15 +99,15 @@
                         'color': '#5F5F5F'
                     },
                     color: {
-                        header: '#007BFF',
+                        header: '#3F51B5',
                         headerText: '#FFFFFF'
                     },
                     buttons: {
                         ok: 'Ok',
                         cancel: 'Cancel'
                     },
-                    overlayOpacity: 0.5, // 0.5 as default
-                    dismissible: true // as true as default
+                    overlayOpacity: 0.5,
+                    dismissible: true
                 },
                 limit: []
             }

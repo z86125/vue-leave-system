@@ -10,5 +10,6 @@ Vue.use(BootstrapVue);
 
 new Vue({
     render: h => h(App),
-    router
+    //路由定義在router.js
+    router  
 }).$mount('#app');

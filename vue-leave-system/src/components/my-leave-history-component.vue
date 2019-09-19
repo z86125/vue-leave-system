@@ -20,6 +20,7 @@
                                     </tr>
                                 </thead>
                                 <tbody>
+                                    <!-- 現在使用v-for時，需要多定義一個:key值，否則編譯完會有warning -->
                                     <tr v-for="data in leaveList" :key="data.id">
                                         <td><input type="checkbox" /></td>
                                         <td>{{ data.Data_Dt }}</td>

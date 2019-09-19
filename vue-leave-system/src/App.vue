@@ -1,4 +1,5 @@
 ﻿<template>
+    <!-- App組件除了顯示navbar之外，其他頁面也是App的子組件 -->
     <div id="app">
         <div>
             <b-navbar toggleable="lg" type="dark" variant="primary" class="app-navbar-text">
@@ -7,6 +8,7 @@
                 <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
                 <b-collapse id="nav-collapse" is-nav>
                     <b-navbar-nav>
+                        <!-- 其他頁面組件的路由 -->
                         <b-nav-item v-on:click="NavbarClick"><router-link to="/profile"><span>我的基本資料</span></router-link></b-nav-item>
                         <b-nav-item v-on:click="NavbarClick"><router-link to="/myLeaveHistory"><span>我的請假紀錄</span></router-link></b-nav-item>
                         <b-nav-item v-on:click="NavbarClick"><router-link to="/leaveApply"><span>請假申請</span></router-link></b-nav-item>
@@ -17,11 +19,13 @@
                 </b-collapse>
             </b-navbar>
         </div>
+        <!--選定的路由將會渲染在router-view中-->
         <router-view></router-view>
     </div>
 </template>
 
 <script>
+    //引入會用到的路由
     import home           from './components/Home.vue';
     import profile        from './components/profile-component.vue';
     import leaveApply     from './components/leave-apply-component.vue';
@@ -46,6 +50,7 @@
                 this.lastEvent = event.target;
             }
         },
+        //將引入的組件定義進vue實例中
         components: {
             home,
             profile,
@@ -59,6 +64,7 @@
 </script>
 
 <style>
+    /*自訂義全域css，其他.vue檔內的style scoped只在該組件內有效*/
     .app-navbar-text span {
         color: white;
         font-family: Microsoft JhengHei;
