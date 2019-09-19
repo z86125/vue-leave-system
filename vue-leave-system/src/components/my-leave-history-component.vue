@@ -20,7 +20,7 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr v-for="data in leaveList">
+                                    <tr v-for="data in leaveList" :key="data.id">
                                         <td><input type="checkbox" /></td>
                                         <td>{{ data.Data_Dt }}</td>
                                         <td>{{ data.Hours }}</td>
@@ -45,6 +45,7 @@
 
     var listData = [
         {
+            id: 1,
             Data_Dt: '2019/01/01',
             Hours: 8,
             Leave_Typ: '事假',
@@ -54,6 +55,7 @@
             Aprv_Person: 'John',
             Aprv_Dt: '2018/01/05'
         }, {
+            id: 2,
             Data_Dt: '2019/01/02',
             Hours: 8,
             Leave_Typ: '病假',
@@ -63,6 +65,7 @@
             Aprv_Person: 'John',
             Aprv_Dt: '2018/01/05'
         }, {
+            id: 3,
             Data_Dt: '2019/01/03',
             Hours: 8,
             Leave_Typ: '特休',

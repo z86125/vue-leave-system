@@ -71,7 +71,7 @@
             color: #FFFFFF;
         }
     .app-navbar-click {
-        font-size: large;
+        /*font-size: large;*/
         font-weight: bold;
     }
     .v-align {
