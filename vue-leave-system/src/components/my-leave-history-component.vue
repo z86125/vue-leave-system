@@ -3,6 +3,11 @@
         <transition name="fade">
             <div v-show="show">
                 <b-container style="padding-top: 30px;">
+                    <b-row v-if="deleteList.length > 0">
+                        <b-col cols="12" align="right" style="padding-bottom: 15px">
+                            <button type="button" class="btn btn-danger" v-on:click="DeleteClick" style="font-family: Microsoft JhengHei;">刪除</button>
+                        </b-col>
+                    </b-row>
                     <b-row>
                         <b-col class="h-align" cols="12">
                             <table class="table table-bordered table-hover shadow app-table">
@@ -22,7 +27,7 @@
                                 <tbody>
                                     <!-- 現在使用v-for時，需要多定義一個:key值，否則編譯完會有warning -->
                                     <tr v-for="data in leaveList" :key="data.id">
-                                        <td><input type="checkbox" /></td>
+                                        <td><input type="checkbox" v-bind:value="data.id" v-model="deleteList"/></td>
                                         <td>{{ data.Data_Dt }}</td>
                                         <td>{{ data.Hours }}</td>
                                         <td>{{ data.Leave_Typ }}</td>
@@ -84,12 +89,18 @@
         },
         data: function () {
             return {
+                deleteList: [],
                 leaveList: listData,
                 show: false
             }
         },
         mounted: function () {
             this.show = true;
+        },
+        methods: {
+            DeleteClick: function (event) {
+                alert(this.deleteList);
+            }
         }
     };
 </script>

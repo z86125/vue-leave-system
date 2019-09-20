@@ -58,6 +58,15 @@
                         </b-col>
                         <b-col cols="2"></b-col>
                     </b-row>
+                    <b-row>
+                        <b-col cols="2"></b-col>
+                        <b-col cols="8">
+                            <div align="right">
+                                <button type="button" class="btn btn-success" style="font-family: Microsoft JhengHei;">申請</button>
+                            </div>
+                        </b-col>
+                        <b-col cols="2"></b-col>
+                    </b-row>
                 </b-container>
             </div>
         </transition>
@@ -114,6 +123,11 @@
         },
         mounted: function () {
             this.show = true;
+        },
+        methods: {
+            ApplyClick: function (event) {
+                alert('apply!');
+            }
         },
         components: {
             'date-picker': myDatepicker
