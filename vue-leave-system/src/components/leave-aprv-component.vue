@@ -5,7 +5,7 @@
                 <b-container style="padding-top: 30px;">
                     <b-row v-if="actionList.length > 0">
                         <b-col cols="12" align="right" style="padding-bottom: 15px">
-                            <div class="btn-group" role="group" aria-label="Basic example" style="font-family: Microsoft JhengHei;">
+                            <div class="btn-group" role="group" aria-label="Basic example">
                                 <button type="button" class="btn btn-success" v-on:click="SuccessClick">覆核</button>
                                 <button type="button" class="btn btn-danger" v-on:click="ReturnClick">退回</button>
                             </div>

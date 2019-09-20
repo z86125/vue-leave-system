@@ -5,7 +5,7 @@
                 <b-container style="padding-top: 30px;">
                     <b-row v-if="deleteList.length > 0">
                         <b-col cols="12" align="right" style="padding-bottom: 15px">
-                            <button type="button" class="btn btn-danger" v-on:click="DeleteClick" style="font-family: Microsoft JhengHei;">刪除</button>
+                            <button type="button" class="btn btn-danger" v-on:click="DeleteClick">刪除</button>
                         </b-col>
                     </b-row>
                     <b-row>
