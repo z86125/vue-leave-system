@@ -3,7 +3,7 @@
     <div id="app">
         <div>
             <b-navbar toggleable="lg" type="dark" variant="primary" class="app-navbar-text">
-                <b-navbar-brand v-on:click="NavbarClick"><router-link to="/home"><span>請假系統</span></router-link></b-navbar-brand>
+                <b-navbar-brand to="/home">請假系統</b-navbar-brand>
 
                 <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
                 <b-collapse id="nav-collapse" is-nav>
@@ -13,15 +13,15 @@
                         <b-nav-item v-on:click="NavbarClick"><router-link to="/profile"><span>我的基本資料</span></router-link></b-nav-item>
                         <b-nav-item v-on:click="NavbarClick"><router-link to="/myLeaveHistory"><span>我的請假紀錄</span></router-link></b-nav-item>
                         -->
-                        <b-nav-item v-on:click="NavbarClick"><router-link to="/leaveApply"><span>請假申請</span></router-link></b-nav-item>
-                        <b-nav-item v-on:click="NavbarClick"><router-link to="/leaveAprv"><span>請假待覆核</span></router-link></b-nav-item>
-                        <b-nav-item v-on:click="NavbarClick"><router-link to="/leaveHistory"><span>請假紀錄</span></router-link></b-nav-item>
-                        <b-nav-item v-on:click="NavbarClick"><router-link to="/orgStruct"><span>組織架構圖</span></router-link></b-nav-item>
+                        <b-nav-item to="/leaveApply">請假申請</b-nav-item>
+                        <b-nav-item to="/leaveAprv">請假待覆核</b-nav-item>
+                        <b-nav-item to="/leaveHistory">請假紀錄</b-nav-item>
+                        <b-nav-item to="/orgStruct">組織架構圖</b-nav-item>
                     </b-navbar-nav>
                     <b-navbar-nav class="ml-auto">
                         <b-nav-item-dropdown text="Profile" right>
-                            <b-dropdown-item href="#"><router-link to="/profile"><span style="color: black">基本資料</span></router-link></b-dropdown-item>
-                            <b-dropdown-item href="#"><router-link to="/myLeaveHistory"><span style="color: black">請假紀錄</span></router-link></b-dropdown-item>
+                            <b-dropdown-item to="/profile">基本資料</b-dropdown-item>
+                            <b-dropdown-item to="/myLeaveHistory">請假紀錄</b-dropdown-item>
                         </b-nav-item-dropdown>
                     </b-navbar-nav>
                 </b-collapse>

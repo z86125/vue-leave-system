@@ -125,7 +125,7 @@
             this.show = true;
         },
         methods: {
-            ApplyClick: function (event) {
+            ApplyClick: function () {
                 alert('apply!');
             }
         },
