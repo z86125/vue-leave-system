@@ -15,6 +15,11 @@ Vue.use(VueRouter);
 
 export default new VueRouter({
     routes: [
+        // 未指定任何路由的預設頁面
+        {
+            path: '',
+            component: home
+        },
         {
             path: '/home',
             component: home

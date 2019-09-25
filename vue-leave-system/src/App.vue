@@ -95,6 +95,11 @@
     .h-align {
         text-align: center;
     }
+
+    body::-webkit-scrollbar {
+        display: none;
+    }
+
     /*進場動畫 name=fade*/
     .fade-enter-active,
     .fade-leave-active {
@@ -106,4 +111,22 @@
         opacity: 0;
     }
 
+    /*從下面飛進的進場動畫*/
+    @keyframes fly-in {
+
+        0% {
+            top: 100%;
+        }
+
+        100% {
+            top: 60px;
+        }
+    }
+
+    .fly-animation {
+        width: 100%;
+        position: absolute;
+        animation-name: fly-in;
+        animation-duration: .5s;
+    }
 </style>
