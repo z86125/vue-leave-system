@@ -41,7 +41,7 @@
     import leaveHistory   from './components/leave-history-component.vue';
     import myLeaveHistory from './components/my-leave-history-component.vue';
     import orgStruct      from './components/organization-structure-component.vue';
-
+    
     export default {
         name: 'app',
         data: function () {

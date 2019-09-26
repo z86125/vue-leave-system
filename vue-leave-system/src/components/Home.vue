@@ -15,9 +15,9 @@
 <script>
     export default {
         name: 'Home',
-        props: {
-            msg: String
-        },
+        props: [
+            'userData'
+        ],
         data: function () {
             return {
                 show: false
@@ -25,6 +25,7 @@
         },
         mounted: function () {
             this.show = true;
+            console.log(this.userData);
         },
     };
 </script>
