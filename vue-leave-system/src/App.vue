@@ -9,10 +9,8 @@
                 <b-collapse id="nav-collapse" is-nav>
                     <b-navbar-nav>
                         <!-- 其他頁面組件的路由 -->
-                        <!--
-                        <b-nav-item v-on:click="NavbarClick"><router-link to="/profile"><span>我的基本資料</span></router-link></b-nav-item>
-                        <b-nav-item v-on:click="NavbarClick"><router-link to="/myLeaveHistory"><span>我的請假紀錄</span></router-link></b-nav-item>
-                        -->
+                        <!-- bootstrap-vue的nav-item可以直接支援vue-router，所以才能直接用
+                             否則一般要使用 <router-link to="path">才行!-->
                         <b-nav-item to="/leaveApply">請假申請</b-nav-item>
                         <b-nav-item to="/leaveAprv">請假待覆核</b-nav-item>
                         <b-nav-item to="/leaveHistory">請假紀錄</b-nav-item>

@@ -9,7 +9,6 @@ import leaveAprv      from './components/leave-aprv-component.vue';
 import leaveHistory   from './components/leave-history-component.vue';
 import myLeaveHistory from './components/my-leave-history-component.vue';
 import orgStruct      from './components/organization-structure-component.vue';
-//
 Vue.use(VueRouter); 
 
 // windows驗證後，取得的userData，win驗證與資料取得方法之後再研究

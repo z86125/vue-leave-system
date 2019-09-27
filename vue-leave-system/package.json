@@ -5,19 +5,25 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "test": "jest"
   },
   "description": "vue-leave-system",
   "author": {
     "name": ""
   },
   "dependencies": {
+    "@babel/core": "^7.6.2",
+    "@vue/test-utils": "^1.0.0-beta.29",
+    "babel-jest": "^24.9.0",
     "bootstrap": "^4.3.1",
     "bootstrap-vue": "^2.0.0",
+    "jest": "^24.9.0",
     "moment": "^2.24.0",
     "portal-vue": "^2.1.6",
     "vue": "2.5.17",
     "vue-datepicker": "^1.3.0",
+    "vue-jest": "^3.0.5",
     "vue-router": "^3.1.3"
   },
   "devDependencies": {

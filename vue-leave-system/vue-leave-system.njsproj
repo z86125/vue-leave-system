@@ -64,11 +64,18 @@
     <Folder Include="src\assets\" />
     <Folder Include="src\assets\image\" />
     <Folder Include="src\components\" />
+    <Folder Include="src\unit-test\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="babel.config.js" />
     <Compile Include="src\main.js" />
     <Compile Include="src\router.js">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\unit-test\sum.js">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\unit-test\sum.test.js">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>

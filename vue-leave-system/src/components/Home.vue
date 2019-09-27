@@ -3,7 +3,7 @@
         <transition name="fade">
             <div v-show="show">
                 <div class="h-align fly-ani">
-                    <span>嗨 <a href="https://vuejs.org" target="_blank">Vue.js</a>，這是請假系統的首頁 !</span>
+                    <span>嗨 <a href="https://vuejs.org" target="_blank">{{ userData.userName }}</a>，這是請假系統的首頁 !</span>
                     <br />
                     <img src="../assets/image/home_leave.jpeg"/>
                 </div>
