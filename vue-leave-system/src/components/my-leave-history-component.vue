@@ -98,7 +98,7 @@
             this.show = true;
         },
         methods: {
-            DeleteClick: function (event) {
+            DeleteClick: function () {
                 alert(this.deleteList);
             }
         }

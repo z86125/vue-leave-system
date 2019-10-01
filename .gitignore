@@ -21,6 +21,7 @@ bld/
 [Bb]in/
 [Oo]bj/
 [Ll]og/
+[Dd]ist/
 
 # Visual Studio 2015 cache/options directory
 .vs/
@@ -260,3 +261,5 @@ paket-files/
 __pycache__/
 *.pyc
 /vue-leave-system/src/unit-test
+/vue-leave-system/public
+/vue-leave-system/vue.config.js

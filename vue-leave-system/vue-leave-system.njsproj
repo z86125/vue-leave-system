@@ -33,8 +33,10 @@
   <ItemGroup>
     <Content Include="public\favicon.ico" />
     <Content Include="public\index.html" />
+    <Content Include="public\web.config" />
     <Content Include="src\App.vue" />
     <Content Include="src\assets\image\home_leave.jpeg" />
+    <Content Include="src\components\notfound.vue" />
     <Content Include="src\components\Home.vue" />
     <Content Include="package.json" />
     <Content Include="README.md" />
@@ -76,6 +78,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="src\unit-test\sum.test.js">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="vue.config.js">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
